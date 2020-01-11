@@ -15,9 +15,12 @@ const TomatoButton = styled(Button)`
   color: tomato;
   border-color: tomato;
 `;
+
+const ReversedButton = props => <Button {...props} children={props.children.split('').reverse()} />
 export default () =>(
   <div>
     <Button>Normal Button</Button>
     <TomatoButton>Tomato Button</TomatoButton>
+    <Button as={ReversedButton}>Custom Button with Normal Button styles</Button>
   </div>
 );

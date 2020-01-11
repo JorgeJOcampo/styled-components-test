@@ -4,6 +4,8 @@ import './App.css';
 import Text from './components/Text'
 import ButtonPropBased from './components/ButtonPropBased';
 import ButtonExtendingBased from './components/ButtonExtendingBased';
+import PropsWithDefault from './components/PropsWithDefault';
+import Animations from './components/Animations';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Text text="Te amo ♥"/>
       <ButtonPropBased/>
       <ButtonExtendingBased/>
+      <PropsWithDefault/>
+      <Animations/>
     </div>
   );
 }
